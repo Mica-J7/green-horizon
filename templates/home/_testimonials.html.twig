@@ -1,0 +1,63 @@
+<section class="testimonials" id="avis">
+    <div class="container">
+        <p class="eyebrow">Avis clients</p>
+        <h2>Ce que disent nos clients</h2>
+
+        <div class="testimonials__carousel" data-controller="carousel">
+            <button type="button" class="testimonials__arrow" data-carousel-target="prevButton" data-action="carousel#prev" aria-label="Avis précédents">
+                {{ ux_icon('tabler:chevron-left') }}
+            </button>
+
+            <div class="testimonials__viewport" data-carousel-target="viewport">
+                <div class="testimonials__track">
+                    <blockquote class="testimonial">
+                        <p class="testimonial__stars">
+                            {% for _ in 1..5 %}{{ ux_icon('tabler:star-filled', {class: 'testimonial__star'}) }}{% endfor %}
+                        </p>
+                        <p>« Équipe très professionnelle, notre jardin a été transformé en quelques jours. Résultat au-delà de nos attentes. »</p>
+                        <footer>Marie D. - Tonnay-Charente</footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p class="testimonial__stars">
+                            {% for _ in 1..5 %}{{ ux_icon('tabler:star-filled', {class: 'testimonial__star'}) }}{% endfor %}
+                        </p>
+                        <p>« Entretien mensuel impeccable, toujours ponctuels et à l'écoute de nos demandes. Je recommande sans hésiter. »</p>
+                        <footer>Thomas L. - Fouras</footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p class="testimonial__stars">
+                            {% for _ in 1..5 %}{{ ux_icon('tabler:star-filled', {class: 'testimonial__star'}) }}{% endfor %}
+                        </p>
+                        <p>« Très bons conseils sur le choix des végétaux, tout pousse parfaitement un an après. »</p>
+                        <footer>Sophie M. - Surgères</footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p class="testimonial__stars">
+                            {% for _ in 1..5 %}{{ ux_icon('tabler:star-filled', {class: 'testimonial__star'}) }}{% endfor %}
+                        </p>
+                        <p>« Devis clair, chantier réalisé dans les délais annoncés. Exactement ce qu'on attendait. »</p>
+                        <footer>Julien P. - Rochefort</footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p class="testimonial__stars">
+                            {% for _ in 1..5 %}{{ ux_icon('tabler:star-filled', {class: 'testimonial__star'}) }}{% endfor %}
+                        </p>
+                        <p>« L'équipe a su s'adapter à un terrain compliqué, le résultat est magnifique. »</p>
+                        <footer>Camille B. - Échillais</footer>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p class="testimonial__stars">
+                            {% for _ in 1..5 %}{{ ux_icon('tabler:star-filled', {class: 'testimonial__star'}) }}{% endfor %}
+                        </p>
+                        <p>« Taille de haie annuelle toujours nickel, jamais eu à me plaindre depuis 3 ans. »</p>
+                        <footer>Nicolas R. - Île-d'Oléron</footer>
+                    </blockquote>
+                </div>
+            </div>
+
+            <button type="button" class="testimonials__arrow" data-carousel-target="nextButton" data-action="carousel#next" aria-label="Avis suivants">
+                {{ ux_icon('tabler:chevron-right') }}
+            </button>
+        </div>
+    </div>
+</section>

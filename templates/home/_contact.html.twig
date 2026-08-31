@@ -1,0 +1,20 @@
+<section class="contact" id="contact">
+    <div class="container contact__inner">
+        <div class="contact__info">
+            <p class="eyebrow">Contact</p>
+            <h2>Un projet ? Parlons-en</h2>
+            <p>Demandez un devis gratuit et sans engagement, nous revenons vers vous sous 48h.</p>
+
+            <ul class="contact__details">
+                <li>{{ ux_icon('tabler:map-pin') }} 8 rue des Tilleuls, 17300 Rochefort</li>
+                <li>{{ ux_icon('tabler:phone') }} 01 23 45 67 89</li>
+                <li>{{ ux_icon('tabler:mail') }} contact&#64;vert-horizon.fr</li>
+                <li>{{ ux_icon('tabler:clock') }} Lun-Ven, 8h-18h</li>
+            </ul>
+        </div>
+
+        <div class="contact__form-wrapper" data-controller="contact-form">
+            {% include 'home/_contact_form.html.twig' %}
+        </div>
+    </div>
+</section>

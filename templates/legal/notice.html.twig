@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mentions légales - Vert Horizon{% endblock %}
+{% block meta_description %}Mentions légales du site Vert Horizon.{% endblock %}
+
+{% block body %}
+    {% include 'home/_header.html.twig' %}
+
+    <main>
+        <section class="legal-page">
+            <div class="container legal-page__inner">
+                <p class="eyebrow">Informations légales</p>
+                <h1>Mentions légales</h1>
+                <p class="legal-page__notice">Site de démonstration - les informations ci-dessous sont fictives et données à titre d'exemple.</p>
+
+                <h2>Éditeur du site</h2>
+                <p>
+                    Vert Horizon - entreprise fictive à des fins de démonstration<br>
+                    Forme juridique : SASU (exemple)<br>
+                    Siège social : 8 rue des Tilleuls, 17300 Rochefort<br>
+                    SIRET : 000 000 000 00000 (fictif)<br>
+                    Directeur de la publication : Vert Horizon<br>
+                    E-mail : contact&#64;vert-horizon.fr<br>
+                    Téléphone : 01 23 45 67 89
+                </p>
+
+                <h2>Hébergement</h2>
+                <p>
+                    Ce site est un projet de démonstration exécuté en environnement local de développement
+                    et n'est pas hébergé publiquement.
+                </p>
+
+                <h2>Propriété intellectuelle</h2>
+                <p>
+                    L'ensemble des contenus de ce site (textes, mises en page) est fourni à titre d'exemple
+                    dans le cadre d'un projet de démonstration et ne fait l'objet d'aucune exploitation commerciale.
+                </p>
+
+                <h2>Contact</h2>
+                <p>Pour toute question relative à ce site de démonstration, utilisez le formulaire de contact de la page d'accueil.</p>
+            </div>
+        </section>
+    </main>
+
+    {% include 'home/_footer.html.twig' %}
+{% endblock %}

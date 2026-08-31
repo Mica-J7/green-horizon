@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vert Horizon - Aménagement & entretien de jardins{% endblock %}
+{% block meta_description %}Vert Horizon accompagne particuliers et professionnels dans la création, l'aménagement et l'entretien de leurs espaces verts.{% endblock %}
+
+{% block body %}
+    {% include 'home/_header.html.twig' %}
+
+    <main>
+        {% include 'home/_hero.html.twig' %}
+        {% include 'home/_services.html.twig' %}
+        {% include 'home/_portfolio.html.twig' %}
+        {% include 'home/_testimonials.html.twig' %}
+        {% include 'home/_areas.html.twig' %}
+        {% include 'home/_faq.html.twig' %}
+        {% include 'home/_contact.html.twig' with { contactForm: contactForm } %}
+    </main>
+
+    {% include 'home/_footer.html.twig' %}
+{% endblock %}

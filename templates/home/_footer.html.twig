@@ -1,0 +1,33 @@
+<footer class="site-footer">
+    <div class="container site-footer__inner">
+        <a href="{{ path('app_home') }}#accueil" class="brand brand--footer" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll">
+            {{ ux_icon('tabler:leaf-filled', {class: 'brand__icon'}) }}
+            <span class="brand__name">Vert Horizon</span>
+        </a>
+
+        <div>
+            <p class="footer-heading">Navigation :</p>
+            <nav class="site-footer__nav">
+                <a href="{{ path('app_home') }}#services" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll">Services</a>
+                <a href="{{ path('app_home') }}#realisations" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll">Réalisations</a>
+                <a href="{{ path('app_home') }}#avis" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll">Avis clients</a>
+                <a href="{{ path('app_home') }}#zone" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll">Zone d'intervention</a>
+                <a href="{{ path('app_home') }}#faq" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll">FAQ</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container site-footer__bottom">
+        <p class="site-footer__copy">© {{ "now"|date("Y") }} Vert Horizon - Site de démonstration, entreprise fictive.</p>
+
+        <nav class="site-footer__legal">
+            <a href="{{ path('app_legal_notice') }}">Mentions légales</a>
+            <a href="{{ path('app_legal_privacy') }}">Politique de confidentialité</a>
+        </nav>
+
+        <a href="{{ path('app_home') }}#accueil" class="site-footer__top" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll">
+            {{ ux_icon('tabler:arrow-up') }}
+            Haut de page
+        </a>
+    </div>
+</footer>

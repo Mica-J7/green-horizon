@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Politique de confidentialité - Vert Horizon{% endblock %}
+{% block meta_description %}Politique de confidentialité et protection des données du site Vert Horizon.{% endblock %}
+
+{% block body %}
+    {% include 'home/_header.html.twig' %}
+
+    <main>
+        <section class="legal-page">
+            <div class="container legal-page__inner">
+                <p class="eyebrow">Vie privée</p>
+                <h1>Politique de confidentialité</h1>
+                <p class="legal-page__notice">Site de démonstration - les informations ci-dessous sont fictives et données à titre d'exemple de conformité RGPD.</p>
+
+                <h2>Responsable du traitement</h2>
+                <p>Vert Horizon (entité fictive), 8 rue des Tilleuls, 17300 Rochefort - contact&#64;vert-horizon.fr</p>
+
+                <h2>Données collectées</h2>
+                <p>
+                    Le formulaire de contact de ce site collecte : nom, e-mail, téléphone (facultatif)
+                    et le contenu de votre message.
+                </p>
+
+                <h2>Finalité du traitement</h2>
+                <p>Ces informations sont utilisées uniquement pour répondre à votre demande de devis ou d'information.</p>
+
+                <h2>Base légale</h2>
+                <p>Le traitement repose sur votre consentement explicite, recueilli via la case à cocher du formulaire de contact.</p>
+
+                <h2>Durée de conservation</h2>
+                <p>Sur un site réel, ces données seraient conservées le temps nécessaire au traitement de la demande, puis supprimées. Sur ce site de démonstration, aucune donnée n'est réellement stockée en base.</p>
+
+                <h2>Vos droits</h2>
+                <p>
+                    Conformément au RGPD, vous disposeriez d'un droit d'accès, de rectification et de suppression
+                    de vos données, exerçable auprès du responsable du traitement mentionné ci-dessus.
+                </p>
+
+                <h2>Cookies</h2>
+                <p>Ce site n'utilise aucun cookie de suivi ou de mesure d'audience.</p>
+            </div>
+        </section>
+    </main>
+
+    {% include 'home/_footer.html.twig' %}
+{% endblock %}

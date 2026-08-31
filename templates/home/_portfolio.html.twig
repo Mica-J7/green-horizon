@@ -1,0 +1,57 @@
+<section class="portfolio" id="realisations">
+    <div class="container" data-controller="lightbox">
+        <p class="eyebrow">Réalisations</p>
+        <h2>Quelques-uns de nos chantiers</h2>
+        <p class="section-lead">
+            Aperçu de projets menés par nos équipes. Cliquez sur une photo pour l'agrandir.
+        </p>
+
+        <div class="grid grid--4">
+            <figure class="portfolio-card">
+                <button type="button" class="portfolio-card__media"
+                        data-action="lightbox#open"
+                        data-lightbox-src-param="{{ asset('images/portfolio-mediterranean.jpg') }}"
+                        data-lightbox-caption-param="Jardin méditerranéen - Villa privée"
+                        aria-label="Agrandir la photo : Jardin méditerranéen - Villa privée">
+                    <img src="{{ asset('images/portfolio-mediterranean.jpg') }}" alt="Jardin méditerranéen avec palmiers pour une villa privée" loading="lazy">
+                </button>
+                <figcaption>Jardin méditerranéen - Villa privée</figcaption>
+            </figure>
+            <figure class="portfolio-card">
+                <button type="button" class="portfolio-card__media"
+                        data-action="lightbox#open"
+                        data-lightbox-src-param="{{ asset('images/portfolio-terrace.jpg') }}"
+                        data-lightbox-caption-param="Terrasse bois & massifs bas entretien"
+                        aria-label="Agrandir la photo : Terrasse bois & massifs bas entretien">
+                    <img src="{{ asset('images/portfolio-terrace.jpg') }}" alt="Terrasse en bois entourée de massifs bas entretien" loading="lazy">
+                </button>
+                <figcaption>Terrasse bois & massifs bas entretien</figcaption>
+            </figure>
+            <figure class="portfolio-card">
+                <button type="button" class="portfolio-card__media"
+                        data-action="lightbox#open"
+                        data-lightbox-src-param="{{ asset('images/portfolio-hedge.jpg') }}"
+                        data-lightbox-caption-param="Haie champêtre & allée gravillonnée"
+                        aria-label="Agrandir la photo : Haie champêtre & allée gravillonnée">
+                    <img src="{{ asset('images/portfolio-hedge.jpg') }}" alt="Allée gravillonnée bordée d'une haie champêtre" loading="lazy">
+                </button>
+                <figcaption>Haie champêtre & allée gravillonnée</figcaption>
+            </figure>
+            <figure class="portfolio-card">
+                <button type="button" class="portfolio-card__media"
+                        data-action="lightbox#open"
+                        data-lightbox-src-param="{{ asset('images/portfolio-potager.jpg') }}"
+                        data-lightbox-caption-param="Potager surélevé & coin détente"
+                        aria-label="Agrandir la photo : Potager surélevé & coin détente">
+                    <img src="{{ asset('images/portfolio-potager.jpg') }}" alt="Potager surélevé avec coin détente à proximité" loading="lazy">
+                </button>
+                <figcaption>Potager surélevé & coin détente</figcaption>
+            </figure>
+        </div>
+
+        <dialog class="lightbox" data-lightbox-target="dialog" data-action="click->lightbox#closeOnBackdrop">
+            <button type="button" class="lightbox__close" data-action="lightbox#close" aria-label="Fermer l'aperçu">{{ ux_icon('tabler:x') }}</button>
+            <img data-lightbox-target="image" src="" alt="">
+        </dialog>
+    </div>
+</section>
