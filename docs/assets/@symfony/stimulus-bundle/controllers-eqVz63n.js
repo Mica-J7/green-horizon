@@ -1,0 +1,11 @@
+import controller_0 from "../../controllers/accordion_controller.js";
+import controller_1 from "../../controllers/carousel_controller.js";
+import controller_2 from "../../controllers/char_counter_controller.js";
+import controller_3 from "../../controllers/contact_form_controller.js";
+import controller_4 from "../../controllers/hello_controller.js";
+import controller_5 from "../../controllers/lightbox_controller.js";
+import controller_6 from "../../controllers/mobile_nav_controller.js";
+import controller_7 from "../../controllers/smooth_anchor_controller.js";
+export const eagerControllers = {"accordion": controller_0, "carousel": controller_1, "char-counter": controller_2, "contact-form": controller_3, "hello": controller_4, "lightbox": controller_5, "mobile-nav": controller_6, "smooth-anchor": controller_7};
+export const lazyControllers = {"csrf-protection": () => import("../../controllers/csrf_protection_controller.js")};
+export const isApplicationDebug = true;

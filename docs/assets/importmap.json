@@ -1,0 +1,62 @@
+{
+    "app": {
+        "path": "\/assets\/app--q683F4.js",
+        "type": "js"
+    },
+    "\/assets\/stimulus_bootstrap.js": {
+        "path": "\/assets\/stimulus_bootstrap-xCO4u8H.js",
+        "type": "js"
+    },
+    "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-eqVz63n.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/accordion_controller.js": {
+        "path": "\/assets\/controllers\/accordion_controller-zcqCpIo.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/carousel_controller.js": {
+        "path": "\/assets\/controllers\/carousel_controller--afqJjz.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/char_counter_controller.js": {
+        "path": "\/assets\/controllers\/char_counter_controller-2CX70Hw.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/contact_form_controller.js": {
+        "path": "\/assets\/controllers\/contact_form_controller-OZVpcpw.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/hello_controller.js": {
+        "path": "\/assets\/controllers\/hello_controller-VYgvytJ.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/lightbox_controller.js": {
+        "path": "\/assets\/controllers\/lightbox_controller-jd07qRI.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/mobile_nav_controller.js": {
+        "path": "\/assets\/controllers\/mobile_nav_controller-BrEi75U.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/smooth_anchor_controller.js": {
+        "path": "\/assets\/controllers\/smooth_anchor_controller-BBwo4gh.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/csrf_protection_controller.js": {
+        "path": "\/assets\/controllers\/csrf_protection_controller-6ynUAeX.js",
+        "type": "js"
+    },
+    "\/assets\/styles\/app.css": {
+        "path": "\/assets\/styles\/app-jvKpJEm.css",
+        "type": "css"
+    },
+    "@hotwired\/stimulus": {
+        "path": "\/assets\/vendor\/@hotwired\/stimulus\/stimulus.index-ryewcoo.js",
+        "type": "js"
+    },
+    "@symfony\/stimulus-bundle": {
+        "path": "\/assets\/@symfony\/stimulus-bundle\/loader-ToSn1lm.js",
+        "type": "js"
+    }
+}

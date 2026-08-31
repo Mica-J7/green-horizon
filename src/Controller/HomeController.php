@@ -18,7 +18,7 @@ class HomeController extends AbstractController
         $isAjax = $request->isXmlHttpRequest();
 
         if ($contactForm->isSubmitted() && $contactForm->isValid()) {
-            $this->addFlash('success', 'Merci pour votre message ! Nous revenons vers vous rapidement.');
+            $this->addFlash('success', 'Votre message a bien été envoyé !');
 
             if ($isAjax) {
                 return $this->render('home/_contact_form.html.twig', [
