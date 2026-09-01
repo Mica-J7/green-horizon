@@ -4,6 +4,7 @@
     --color-primary-light: #4c7a52;
     --color-accent: #c96f4a;
     --color-bg: #f7f5ef;
+    --color-bg-section: #efe9db;
     --color-surface: #ffffff;
     --color-text: #2b2b26;
     --color-text-muted: #6b6a62;
@@ -200,13 +201,7 @@ a {
 /* Hero */
 .hero {
     padding: 96px 0 80px;
-    background:
-        radial-gradient(
-            ellipse at top right,
-            rgba(76, 122, 82, 0.18),
-            transparent 60%
-        ),
-        var(--color-bg);
+    background: var(--color-bg-section);
 }
 
 .hero__inner {
@@ -266,6 +261,10 @@ section {
 
 section:nth-of-type(even) {
     background: var(--color-surface);
+}
+
+section:nth-of-type(odd):not(.hero) {
+    background: var(--color-bg-section);
 }
 
 /* Grid & cards */
@@ -812,7 +811,7 @@ section:nth-of-type(even) {
 
 /* Footer */
 .site-footer {
-    background: var(--color-primary-dark);
+    background: var(--color-text);
     color: #e9ede9;
     padding: 48px 0;
 }
