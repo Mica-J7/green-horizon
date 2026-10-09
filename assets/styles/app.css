@@ -1,19 +1,20 @@
 :root {
-    --color-primary: #2f5233;
-    --color-primary-dark: #203a24;
-    --color-primary-light: #4c7a52;
-    --color-accent: #c96f4a;
+    --color-primary: #9c4a35;
+    --color-primary-dark: #5c3626;
+    --color-primary-light: #c98a72;
+    --color-accent: #c99a3f;
+    --color-leaf: #5f7a52;
     --color-bg: #f7f5ef;
     --color-bg-section: #efe9db;
     --color-surface: #ffffff;
     --color-text: #2b2b26;
     --color-text-muted: #6b6a62;
     --color-border: #e6e2d6;
-    --font-heading: "Fraunces", Georgia, serif;
+    --font-heading: "Quicksand", Georgia, serif;
     --font-body:
         "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     --radius: 12px;
-    --shadow: 0 10px 30px -12px rgba(47, 82, 51, 0.25);
+    --shadow: 0 10px 30px -12px rgba(156, 74, 53, 0.25);
 }
 
 * {
@@ -32,7 +33,7 @@ h1,
 h2,
 h3 {
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.2;
     margin: 0 0 0.5em;
     color: var(--color-primary-dark);
@@ -71,6 +72,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
     padding: 0.85em 1.6em;
     border-radius: 999px;
     font-weight: 600;
@@ -104,7 +106,7 @@ a {
 }
 
 .btn--ghost:hover {
-    background: rgba(47, 82, 51, 0.08);
+    background: rgba(156, 74, 53, 0.08);
 }
 
 .btn--small {
@@ -148,7 +150,7 @@ a {
 
 .brand__icon {
     font-size: 1.4rem;
-    color: var(--color-primary);
+    color: var(--color-leaf);
 }
 
 .nav {
@@ -224,8 +226,13 @@ a {
 
 .hero__actions {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     flex-wrap: wrap;
+}
+
+.hero__actions .btn {
+    padding: 0.8em 1.3em;
+    font-size: 0.95rem;
 }
 
 .hero__media img {
@@ -292,14 +299,14 @@ section:nth-of-type(odd):not(.hero) {
 }
 
 .card:hover {
-    box-shadow: var(--shadow), 0 0 0 3px rgba(47, 82, 51, 0.4);
+    box-shadow: var(--shadow), 0 0 0 3px rgba(156, 74, 53, 0.4);
 }
 
 .card__icon {
     font-size: 1.8rem;
     display: block;
     margin-bottom: 12px;
-    color: var(--color-primary);
+    color: var(--color-leaf);
 }
 
 .card h3 {
@@ -584,7 +591,7 @@ section:nth-of-type(odd):not(.hero) {
 }
 
 .areas__list li:hover {
-    background-color: rgba(76, 122, 82, 0.14);
+    background-color: rgba(201, 138, 114, 0.18);
     border-color: var(--color-primary-light);
 }
 
@@ -695,7 +702,7 @@ section:nth-of-type(odd):not(.hero) {
 
 .contact__details svg {
     flex-shrink: 0;
-    color: var(--color-primary);
+    color: var(--color-leaf);
 }
 
 .contact-form {

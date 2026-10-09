@@ -11,10 +11,10 @@
             <a href="{{ path('app_home') }}#avis" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll click->mobile-nav#close">Avis clients</a>
             <a href="{{ path('app_home') }}#zone" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll click->mobile-nav#close">Zone d'intervention</a>
             <a href="{{ path('app_home') }}#faq" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll click->mobile-nav#close">FAQ</a>
-            <a href="{{ path('app_home') }}#contact" class="btn btn--primary nav__cta" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll click->mobile-nav#close">Demander un devis</a>
+            <a href="{{ path('app_home') }}#contact" class="btn btn--primary nav__cta" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll click->mobile-nav#close">Demander un devis {{ ux_icon('tabler:send') }}</a>
         </nav>
 
-        <a href="{{ path('app_home') }}#contact" class="btn btn--primary btn--small site-header__cta" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll">Demander un devis</a>
+        <a href="{{ path('app_home') }}#contact" class="btn btn--primary btn--small site-header__cta" data-controller="smooth-anchor" data-action="click->smooth-anchor#scroll">Demander un devis {{ ux_icon('tabler:send') }}</a>
 
         <button type="button" class="nav-toggle" data-mobile-nav-target="toggle" data-action="mobile-nav#toggle" aria-label="Ouvrir le menu" aria-expanded="false">
             {{ ux_icon('tabler:menu-2', {class: 'nav-toggle__icon nav-toggle__icon--open'}) }}
